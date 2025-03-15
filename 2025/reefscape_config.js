@@ -54,15 +54,6 @@ var config_data = `
       "type": "team",
       "min": 1,
       "max": 99999
-    },
-    { "name": "Auto Start Position",
-      "code": "as",
-      "type": "clickable_image",
-      "filename": "2025/half_field.png",
-      "clickRestriction": "one",
-      "dimensions": "6 6",
-      "allowableResponses": "1 7 13 19 25 31",
-      "shape": "circle 5 black red true"
     }
   ],
   "auton": [
@@ -85,14 +76,6 @@ var config_data = `
     { "name": "Coral L4",
       "code": "ac4",
       "type": "counter"
-    },
-    { "name": "Auto Scoring Position",
-      "code": "asp",
-      "type": "clickable_image",
-      "filename": "2025/reef.png",
-      "dimensions": "6 6",
-      "allowableResponses": "1 2 3 4 5 6 7 8 9 10 11 12 13 14 17 18 19 20 23 24 25 26 27 28 29 30 31 32 33 34 35 36",
-      "shape": "circle 5 black red true"
     },
     { "name": "Processor Score",
       "code": "aps",
@@ -128,15 +111,7 @@ var config_data = `
       "code": "tns",
       "type": "counter"
     },
-    { "name": "Pickup From",
-      "code": "tpu",
-      "type": "radio",
-      "choices": {
-        "s": "Coral Station<br>",
-        "f": "Floor<br>",
-        "b": "Both<br>",
-        "x": "Not Attempted"
-      },
+    {
       "defaultValue": "x"
     },
     { "name": "Scored in<br>Opponent<br>Processor",
@@ -145,10 +120,6 @@ var config_data = `
     }
   ],
   "endgame": [
-    { "name": "Barge Timer",
-      "code": "ebt",
-      "type": "timer"
-    },
     { "name": "Final Robot Status",
       "code": "efs",
       "type":"radio",
@@ -163,28 +134,6 @@ var config_data = `
     }
   ],
   "postmatch": [
-    { "name": "Attained Coopertition Pt",
-      "code": "cop",
-      "type": "bool"
-    },
-    { "name": "Algae Left in Reef",
-      "code": "alr",
-      "type": "number",
-      "min": 0,
-      "max": 9,
-      "defaultValue": 0
-    },
-    { "name": "Driver Skill",
-      "code": "ds",
-      "type": "radio",
-      "choices": {
-        "n": "Not Effective<br>",
-        "a": "Average<br>",
-        "v": "Very Effective<br>",
-        "x": "Not Observed"
-      },
-      "defaultValue": "x"
-    },
     { "name": "Defense Rating",
       "code": "dr",
       "type": "radio",
@@ -196,18 +145,6 @@ var config_data = `
         "x": "Did not play defense"
       },
       "defaultValue": "x"
-    },
-    { "name": "Speed Rating",
-      "code": "sr",
-      "type": "radio",
-      "choices": {
-        "1": "1 (slow)<br>",
-        "2": "2<br>",
-        "3": "3<br>",
-        "4": "4<br>",
-        "5": "5 (fast)"
-      },
-      "defaultValue":"3"
     },
     { "name": "Died/Immobilized",
       "code": "die",
