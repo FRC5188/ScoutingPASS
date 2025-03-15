@@ -111,9 +111,6 @@ var config_data = `
       "code": "tns",
       "type": "counter"
     },
-    {
-      "defaultValue": "x"
-    },
     { "name": "Scored in<br>Opponent<br>Processor",
       "code": "opp",
       "type": "bool"
